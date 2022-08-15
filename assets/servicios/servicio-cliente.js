@@ -1,12 +1,13 @@
 //listar productos
 const listaProductos= () => 
-fetch("http://localhost:3000/articulos").then((respuesta) => respuesta.json());
+//fetch("http://localhost:3000/articulos").then((respuesta) => respuesta.json());
 //fetch("http://localhost:3001/articulos").then((respuesta) => respuesta.json());
+fetch("https://sl-ecommerce-alura-final.herokuapp.com//articulos").then((respuesta) => respuesta.json());
 
 //fun para eliminar cliente
 //le pasamos el id a eliminar y en la url del fetch tmb el id
 const eliminarProducto = (id) => {
-  return fetch(`http://localhost:3000/articulos/${id}`,{
+  return fetch(`https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}`,{
  // return fetch(`http://localhost:3001/articulos/${id}`, {
     method: "DELETE",
   });
@@ -15,7 +16,7 @@ const eliminarProducto = (id) => {
 //obtener el detalle del producto por medio del id
 //respuesta la retornamos en .json
 const detalleProducto = (id) => {
-   return fetch(`http://localhost:3000/articulos/${id}`).then((respuesta)=>
+   return fetch(`https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}`).then((respuesta)=>
   //return fetch(`http://localhost:3001/articulos/${id}`).then((respuesta) =>
     respuesta.json()
   );
@@ -31,7 +32,7 @@ const actualizarProducto = (
   descripcion,
   id
 ) => {
-  return fetch(`http://localhost:3000/articulos/${id}`,{
+  return fetch(`https://sl-ecommerce-alura-final.herokuapp.com/${id}`,{
   //return fetch(`http://localhost:3001/articulos/${id}`, {
     method: "PUT",
     headers: {
@@ -56,7 +57,7 @@ const crearProducto = (url, categoria, nombre, precio, codigo, descripcion) => {
   //decimos el metodo a utilizar, sino lo aclaramos usa GET
   //queremos crear usamos POST
   //recibe 2 parametros url donde debe ir + objeto POST
-  return fetch("http://localhost:3000/articulos",{
+  return fetch("https://sl-ecommerce-alura-final.herokuapp.com/articulos",{
  // return fetch("http://localhost:3001/articulos", {
     method: "POST", //para crear nuevo elemento
     headers: {
