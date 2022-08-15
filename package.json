@@ -1,17 +1,19 @@
 {
-  "name": "json-server-deploy",
+  "name": "admin",
   "version": "1.0.0",
-  "description": "Simple json database to deploy to the host of your choice",
-  "main": "server.js",
+  "description": "Ecommerce AluraLatam - Oracle",
+  "main": "index.js",
   "scripts": {
-  "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://"
   },
   "keywords": [
-  "ninjakodtv, json-server,heroku, node, REST API"
+    "Alura"
   ],
   "author": "Sebastian Lucas",
   "license": "ISC",
-  "dependencies": {
-  "json-server": "^0.17.0"
-  }
- }
+  "homepage": ""
+}

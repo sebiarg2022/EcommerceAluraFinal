@@ -1,7 +1,7 @@
 //listar productos
 const listaProductos = () =>
   //fetch("http://localhost:3000/articulos").then((respuesta) => respuesta.json());
-  fetch("https://sebiarg2022.github.io/EcommerceAluraFinal/db.json/articulos").then((respuesta) =>
+  fetch("https://sebiarg2022.github.io/EcommerceAluraFinal/articulos").then((respuesta) =>
     respuesta.json()
   );
 
@@ -9,7 +9,7 @@ const listaProductos = () =>
 //le pasamos el id a eliminar y en la url del fetch tmb el id
 const eliminarProducto = (id) => {
   //return fetch(`http://localhost:3000/articulos/${id}`,{
-  return fetch(`https://sebiarg2022.github.io/EcommerceAluraFinal/db.json/articulos/${id}`, {
+  return fetch(`https://sebiarg2022.github.io/EcommerceAluraFinal/articulos/${id}`, {
     method: "DELETE",
   });
 };
