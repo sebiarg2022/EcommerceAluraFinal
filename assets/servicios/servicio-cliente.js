@@ -1,15 +1,13 @@
 //listar productos
-const listaProductos = () =>
-  //fetch("http://localhost:3000/articulos").then((respuesta) => respuesta.json());
-  fetch("https://sebiarg2022.github.io/EcommerceAluraFinal/articulos").then((respuesta) =>
-    respuesta.json()
-  );
+const listaProductos= () => 
+fetch("http://localhost:3000/articulos").then((respuesta) => respuesta.json());
+//fetch("http://localhost:3001/articulos").then((respuesta) => respuesta.json());
 
 //fun para eliminar cliente
 //le pasamos el id a eliminar y en la url del fetch tmb el id
 const eliminarProducto = (id) => {
-  //return fetch(`http://localhost:3000/articulos/${id}`,{
-  return fetch(`https://sebiarg2022.github.io/EcommerceAluraFinal/articulos/${id}`, {
+  return fetch(`http://localhost:3000/articulos/${id}`,{
+ // return fetch(`http://localhost:3001/articulos/${id}`, {
     method: "DELETE",
   });
 };
@@ -17,8 +15,8 @@ const eliminarProducto = (id) => {
 //obtener el detalle del producto por medio del id
 //respuesta la retornamos en .json
 const detalleProducto = (id) => {
-  // return fetch(`http://localhost:3000/articulos/${id}`).then((respuesta)=>
-  return fetch(`https://sebiarg2022.github.io/EcommerceAluraFinal/db.json/articulos/${id}`).then((respuesta) =>
+   return fetch(`http://localhost:3000/articulos/${id}`).then((respuesta)=>
+  //return fetch(`http://localhost:3001/articulos/${id}`).then((respuesta) =>
     respuesta.json()
   );
 };
@@ -33,8 +31,8 @@ const actualizarProducto = (
   descripcion,
   id
 ) => {
-  //return fetch(`http://localhost:3000/articulos/${id}`,{
-  return fetch(`https://sebiarg2022.github.io/EcommerceAluraFinal/db.json/articulos/${id}`, {
+  return fetch(`http://localhost:3000/articulos/${id}`,{
+  //return fetch(`http://localhost:3001/articulos/${id}`, {
     method: "PUT",
     headers: {
       //encabezado solo para q el server sepa q tipo de archivo recibe
@@ -58,8 +56,8 @@ const crearProducto = (url, categoria, nombre, precio, codigo, descripcion) => {
   //decimos el metodo a utilizar, sino lo aclaramos usa GET
   //queremos crear usamos POST
   //recibe 2 parametros url donde debe ir + objeto POST
-  //return fetch("http://localhost:3000/articulos",{
-  return fetch("https://sebiarg2022.github.io/EcommerceAluraFinal/db.json/articulos/articulos", {
+  return fetch("http://localhost:3000/articulos",{
+ // return fetch("http://localhost:3001/articulos", {
     method: "POST", //para crear nuevo elemento
     headers: {
       //encabezado solo para q el server sepa q tipo de archivo recibe
