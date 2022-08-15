@@ -1,0 +1,124 @@
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--color-fondo-grisclaro);
+  color: var(--contrast-dark-color);
+  font-family: var(--font-family);
+  font-size: 22px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex--center {
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.register-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.register-card__icon-complete {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  margin-bottom: 1rem;
+
+  background-image: url(../img/iconos/checkmark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.register-card__title {
+  max-width: 20rem;
+}
+
+.card {
+  background-color: var(--contrast-ligth-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 45rem;
+  padding: 1.75rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  font-size: var(--font-size-card-title);
+  margin-bottom: 1rem;
+}
+
+.registro__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.registro__icon-completo {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  margin-bottom: 1rem;
+
+  background-image: url(../img/iconos/checkmark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button_productos {
+  display: block;
+  font-family: var(--font-family);
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  width: 100%;
+  margin-top: 1rem;
+  max-width: 20rem;
+  padding: 1.125rem;
+  box-sizing: border-box;
+  color: var(--contrast-ligth-color);
+  font-size: 22px;
+  align-self: center;
+  font: inherit;
+}
+
+.button_productos:hover {
+  transform: scale(1.04);
+}
+
+.registro-card__title {
+  max-width: 20rem;
+}
+
+.register-card__icon-incompleto {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  background-image: url(../img/iconos/denied.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

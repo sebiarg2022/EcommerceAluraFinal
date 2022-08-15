@@ -1,0 +1,254 @@
+/*banner*/
+.banner__container-img {
+  background: url(../../assets/img/bannerPrincipal.png) center / cover no-repeat;
+  padding: 15px 100px 75px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.banner__info {
+  line-height: 40px;
+}
+
+.banner__info-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.banner__info-description {
+  font-size: 17px;
+  color: whitesmoke;
+}
+
+.banner__button {
+  padding: 16px;
+  background-color: var(--color_fondo_botones-2);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__button:hover {
+  transform: scale(1.04);
+}
+
+.banner__button:active {
+  border: none;
+}
+
+/*Section - Productos  - juegos*/
+
+.productos {
+  padding: 15px 50px;
+}
+
+.productos__card {
+  position: relative;
+  margin: 5px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.productos__card--title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #464646;
+}
+
+.productos__card--price {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #464646;
+}
+.productos__card--img {
+  border-radius: 10px;
+  margin-right: 20px;
+    width: 180px;
+    height: 180px;
+}
+
+.productos__card-boton {
+  border: none;
+  background: transparent;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2a7ae4;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.productos__card-boton:hover {
+  text-decoration: underline;
+}
+
+.productos__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.productos__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.productos__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 14px;
+  padding-bottom: 10px;
+  color: var(--color_H2);
+}
+
+.productos__mostrar {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 14px;
+  padding-bottom: 10px;
+  color: var(--color_fondo_botones-2);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.productos__mostrar:hover {
+  text-decoration: underline;
+}
+
+.img__arrow {
+  padding-left: 10px;
+}
+
+.productos__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*BUSQUEDA */
+.td-error {
+  padding: 1rem;
+  color: red;
+  font-weight: 600;
+}
+
+.td-error2 {
+  padding: 1rem;
+  color: red;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 450px) {
+  .banner__container-img {
+    padding: 0;
+  }
+  .banner__info {
+    line-height: 25px;
+  }
+  .banner__info-title {
+    font-size: 24px;
+  }
+  .banner__info-description {
+    font-size: 16px;
+  }
+  .banner__button {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .productos {
+    padding: 0 5px;
+  }
+
+  .productos__header {
+    padding: 0 10px;
+  }
+
+  .productos__title {
+    font-size: 18px;
+  }
+
+  .productos__list {
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .productos__card {
+    padding: 3px;
+    /*width: 45%;*/
+  }
+
+  .productos__card:nth-child(5),
+  .productos__card:nth-child(6) {
+    display: none;
+  }
+
+  .productos__card-info {
+    margin-left: 10px;
+  }
+
+  .productos__card--img {
+    width: 100%;
+    width: 120px;
+    height: 120px;
+    
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 768px) {
+  .productos {
+    padding: 15px 15px;
+  }
+
+  .productos__list {
+    justify-content: flex-start;
+  }
+
+  .productos__card {
+    padding: 3px;
+   /* width: 22%;*/
+  }
+
+  .productos__card:nth-child(5),
+  .productos__card:nth-child(6) {
+    display: none;
+  }
+
+  .productos__card--img {
+    width: 100%;
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .productos__list {
+    justify-content: flex-start;
+  }
+
+  .productos__card {
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .productos__card:nth-child(5),
+  .productos__card:nth-child(6) {
+    display: none;
+  }
+}

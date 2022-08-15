@@ -1,0 +1,39 @@
+:root {
+  --color_fondo: #f5f5f5; /*#EAF2FD;*/
+  --fuente_principal: "Raleway", sans-serif;
+  --color_fondo_botones-2: cornflowerblue;
+  --color_fondo_registro: #eaf2fd;
+  --color_H2: #464646;
+  --color_lbl-input: #a2a2a2;
+  --color_placeholder: #464646;
+  --color-fondo-grisclaro: #e5e5e5;
+  --warning-color: #df2525;
+  --primary-color: #0071ea;
+  --contrast-ligth-color: #fff;
+ 
+    --font-family: "Montserrat", sans-serif;
+    --font-family-logo: "Pacifico", cursive;
+  
+    --font-input: 300;
+  
+    --font-size-logo: 28px;
+    --font-size-card-title: 28px;
+    --font-size-input-label: 20px;
+    --font-size-button: 22px;
+    --font-size-form-fieldset: 22px;
+    --font-size-table-header: 22px;
+    --font-size-modal-title: 28px;
+    --font-size-modal-button: 28px;
+  
+    --primary-color: #0071ea;
+    --secundary-color: #d6eaff;
+    --contrast-dark-color: #4d4d4d;
+    --contrast-ligth-color: #fff;
+    --info-color: #df2525;
+    --sucess-color: #047900;
+    --transparency-color: #4d4d4d33;
+  
+    --shadow: 0 5px 10px #55a6ff38;
+  
+  
+}

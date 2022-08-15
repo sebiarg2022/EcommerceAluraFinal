@@ -1,0 +1,193 @@
+{
+  "articulos": [
+    {
+      "id": 1,
+      "url": "https://www.casadelaudio.com/Image/0/500_500-225-son-596.jpg",
+      "categoria": "juego",
+      "nombre": "FIFA 22 PS5",
+      "precio": "60,00",
+      "codigo": "11111111",
+      "descripcion": "Juego de futbol - Consola PS5"
+    },
+    {
+      "id": 2,
+      "url": "https://stylewatch.vtexassets.com/arquivos/ids/195665-800-auto?width=800&height=auto&aspect=true",
+      "categoria": "juego",
+      "nombre": "FIFA 22 PS4",
+      "precio": "50,00",
+      "codigo": "11111112",
+      "descripcion": "Juego de futbol - Consola PS4"
+    },
+    {
+      "id": 3,
+      "url": "https://image.api.playstation.com/vulcan/img/rnd/202011/1018/SGqMZHd7WWmN4XIcLfYMxJsc.png",
+      "categoria": "juego",
+      "nombre": "UNCHARTED 4 PS4",
+      "precio": "30,00",
+      "codigo": "11111113",
+      "descripcion": "Juego de aventura - Consola PS4"
+    },
+    {
+      "id": 4,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmGN7wK0wwieqi0ctGRsayaf5VkgMDMYoEw&usqp=CAU",
+      "categoria": "juego",
+      "nombre": "SPIDERMAN PS4",
+      "precio": "29,00",
+      "codigo": "11111114",
+      "descripcion": "Juego de aventura - Consola PS4"
+    },
+    {
+      "id": 5,
+      "url": "https://http2.mlstatic.com/D_NQ_NP_954232-MLA50897630704_072022-V.jpg",
+      "categoria": "juego",
+      "nombre": "MarioParty SWITCH",
+      "precio": "65,00",
+      "codigo": "11111115",
+      "descripcion": "Juego de aventura - Legendario Mario Bros - Consola SWITCH"
+    },
+    {
+      "id": 6,
+      "url": "https://media.vandal.net/i/ivandal/1200x630/89906/super-mario-3d-allstars-20209315215983_29.jpg",
+      "categoria": "juego",
+      "nombre": "Super Mario AllStars3D SWITCH",
+      "precio": "60,00",
+      "codigo": "11111116",
+      "descripcion": "Juego de aventura - Legendario Mario Bros - Consola SWITCH"
+    },
+    {
+      "id": 7,
+      "url": "https://dbdzm869oupei.cloudfront.net/img/sticker/large/36685.jpg",
+      "categoria": "consola",
+      "nombre": "Consola PS5 Blue",
+      "precio": "700,00",
+      "codigo": "11111121",
+      "descripcion": "Consola PS5 Blue - Edicion Limitada. Incluye un jostick"
+    },
+    {
+      "url": "https://spacegamer.com.ar/img/Public/1058-producto-1-49-84-150.jpg",
+      "categoria": "consola",
+      "nombre": "Consola PS4 combo",
+      "precio": "300,00",
+      "codigo": "11111122",
+      "descripcion": "Consola PS4 (combo), incluye 3 juegos + 1 jostick - disco 1TB",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "url": "https://vader.news/__export/1588512258326/sites/gadgets/img/2020/05/03/h2x1_nintendoswitch_hardware_nintendoswitch.jpg_1301049368.jpg",
+      "categoria": "consola",
+      "nombre": "Portatil Nintendo Switch",
+      "precio": "500,00",
+      "codigo": "11111123",
+      "descripcion": "Consola Portatil Nintendo Switch"
+    },
+    {
+      "id": 10,
+      "url": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/others_3/H2x1_NintendoClassicMiniNES_Announcement_image1280w.jpg",
+      "categoria": "consola",
+      "nombre": "Consola Retro Nintendo",
+      "precio": "200,00",
+      "codigo": "11111124",
+      "descripcion": "Consola Retro Nintendo + 2 josticks"
+    },
+    {
+      "id": 11,
+      "url": "https://http2.mlstatic.com/D_NQ_NP_621491-MLA48680897402_122021-V.jpg",
+      "categoria": "consola",
+      "nombre": "Consola X Series",
+      "precio": "650,00",
+      "codigo": "11111125",
+      "descripcion": "Consola Xbox X Series con 1 jostick + 1 juego a eleccion"
+    },
+    {
+      "id": 12,
+      "url": "https://i0.wp.com/retromaquinitas.com/wp-content/uploads/2014/05/DSC03926.JPG?resize=500%2C373",
+      "categoria": "consola",
+      "nombre": "Portatil RETRO PSP",
+      "precio": "200,00",
+      "codigo": "11111126",
+      "descripcion": "Consola Portatil Retro PSP edicion limitada Blue de Sony"
+    },
+    {
+      "url": "https://tiendas.contapyme.com.ar/clientes/goodgames/archivos/images/1/image_3961.png",
+      "categoria": "accesorio",
+      "nombre": "Jostick PS5 Bordo",
+      "precio": "60,00",
+      "codigo": "11111131",
+      "descripcion": "Jostick PS5 edicion limitada color Bordo",
+      "id": 13
+    },
+    {
+      "url": "https://spacegamer.com.ar/img/Public/1058-producto-dualssss-7379.jpg",
+      "categoria": "accesorio",
+      "nombre": "jostick PS4",
+      "precio": "46,00",
+      "codigo": "11111132",
+      "descripcion": "Jotick PS4 color Blue",
+      "id": 14
+    },
+    {
+      "url": "https://image.shutterstock.com/image-photo/rostovondon-russia-april-2021-joystick-260nw-1965383146.jpg",
+      "categoria": "accesorio",
+      "nombre": "jostick Nintendo Switch",
+      "precio": "58,00",
+      "codigo": "11111133",
+      "descripcion": "jostick Nintendo Switch",
+      "id": 15
+    },
+    {
+      "url": "https://images.fravega.com/f500/9bf0c5a87ddb069a1a9f14c9854a0e4c.jpg",
+      "categoria": "accesorio",
+      "nombre": "Jostick Xbox",
+      "precio": "45,00",
+      "codigo": "11111134",
+      "descripcion": "Jostick XBox color Blanco",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "url": "https://m.media-amazon.com/images/I/61tXNz1xiCL._SL1500_.jpg",
+      "categoria": "accesorio",
+      "nombre": "Combo move + cam PS4",
+      "precio": "45,00",
+      "codigo": "11111135",
+      "descripcion": "Combo 2 move + cam PS4"
+    },
+    {
+      "id": 18,
+      "url": "https://arsonyb2c.vtexassets.com/arquivos/ids/348062/PS5_WHS_Pshot_A.jpg?v=637363806123470000",
+      "categoria": "accesorio",
+      "nombre": "Auriculares PS5",
+      "precio": "55,00",
+      "codigo": "11111136",
+      "descripcion": "Auriculares PS5 Negros"
+    },
+    {
+      "id": "426b109d-238e-4a21-bca4-cc69072409ab",
+      "url": "https://arsonyb2c.vtexassets.com/arquivos/ids/353844/PS5-Spiderman-ultimate.jpg?v=637401014503570000",
+      "categoria": "juego",
+      "nombre": "Spiderman PS5",
+      "precio": "90",
+      "codigo": "11111117",
+      "descripcion": "Juego de Spiderman PS5"
+    },
+    {
+      "url": "https://www.atajo.com.ar/images/0000PS5-STANDARD000459501PS5-STANDARD-Consola-Playstation-PS5-Standard-04.jpg",
+      "categoria": "consola",
+      "nombre": "PS5 standard White",
+      "precio": "600",
+      "codigo": "11111127",
+      "descripcion": "Consola PS5 Blanca Standard con 1 jostick",
+      "id": "3a52003a-132f-47fe-b1d2-98d3d7c1611c"
+    },
+    {
+      "id": "8de6abaa-46bc-40c9-a7cb-39941e547fef",
+      "url": "https://http2.mlstatic.com/D_NQ_NP_2X_740554-MLA49117324522_022022-F.webp",
+      "categoria": "consola",
+      "nombre": "Consola Edition Gold PS5",
+      "precio": "900",
+      "codigo": "11111128",
+      "descripcion": "Consola PS5 Edicion GOLD con 1 jostick + 1 juego a eleccion"
+    }
+  ]
+}

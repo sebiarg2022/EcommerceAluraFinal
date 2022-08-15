@@ -1,0 +1,128 @@
+.login {
+  background-color: var(--color-fondo-grisclaro);
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  justify-content: center;
+}
+
+.login__container-title {
+  font-family: var(--fuente_principal);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.input__login-correo,
+.input__login-password {
+  font-family: var(--fuente_principal);
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px 0px var(--color_placeholder);
+  border: none;
+  outline: none;
+  margin: 5px auto;
+}
+
+.input-container--invalid .input__login-correo,
+.input-container--invalid .input__login-password {
+  border: 1px solid var(--warning-color);
+  border-radius: 7px;
+  margin: 0 auto;
+}
+
+.input-container--invalid .input__login-correo::placeholder,
+.input-container--invalid .input__login-password::placeholder {
+  color: var(--warning-color);
+}
+
+.input-icon {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container--invalid .input-icon {
+  color: var(--warning-color);
+  top: 35%;
+}
+
+.mjeLogin {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 8px;
+  color: var(--warning-color);
+  font-weight: 700;
+}
+
+.mjeLoginActivo {
+  display: block;
+}
+.a_formulario-footer {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.envioMje {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 8px;
+  color: green;
+  font-weight: 700;
+}
+
+.envioMjeActivo {
+  display: block;
+}
+
+.login__button-a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.login__button {
+  padding: 16px;
+  background-color: var(--color_fondo_botones-2);
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__button:hover {
+  transform: scale(1.04);
+}
+
+@media screen and (max-width: 450px) {
+  .input__login-correo,
+  .input__login-password {
+    width: 80%;
+  }
+  .input__login-correo::placeholder,
+  .input__login-password::placeholder {
+    font-size: 12px;
+  }
+  .login__button {
+    width: 85%;
+  }
+  .login__button-a {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Inter:wght@100;200;300;700;800;900&family=Raleway:wght@100;300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Productos</title>
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/variables.css" rel="stylesheet" />
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/productos_agregar.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header__container">
+        <div class="header__menu">
+            <a class="header__logo" href = "../../index.html">
+                <img class="img_menu" src = "../img/logoEcommerce.svg" alt = "logo">
+            </a>
+            <div class="header__search">
+                <input class="header__input-search" id="input_search" type = "text" placeholder=" Buscar...">
+                <button class="header__btn-search"><img class="btn_search_img" src ="../img/iconos/search.svg" alt = ""></button>
+            </div>
+        </div>
+        <a class="header__administador" href="../paginas/productos.html">
+            <button class="header__btn-administrador">
+                <span>Menu Administrador</span>
+            </button>
+        </a>
+
+    </header>
+    <main> 
+        
+    <section class="nuevo__producto">
+            <h2 class="nuevo__producto-title">Editar producto</h2>
+            <div class="input-container">
+            <label class="nuevo__producto-lbl">
+                url imagen
+                <input class="nuevo__producto-input" id="urlProducto" type="url" required placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAA.png">
+            </label>
+            <span class="error-agregar-producto" id="error-mensaje">Este campo no es valido</span>
+             </div>
+            <div class="input-container">
+            <label class="nuevo__producto-lbl">
+                Categoria
+                <input class="nuevo__producto-input" id="categoriaProducto" type="text" required  placeholder="Consolas - Juegos - Accesorios">
+            </label>
+            <span class="error-agregar-producto" id="error-mensaje">Este campo no es valido</span>
+        </div>
+            <div class="input-container">
+            <label class="nuevo__producto-lbl">
+                Nombre del producto 
+                <input class="nuevo__producto-input" id="nombreProducto" type="text" required  placeholder="nombre del producto">
+        </label>
+            <span class="error-agregar-producto" id="error-mensaje">Este campo no es valido</span>
+        </div>
+            <div class="input-container">
+            <label class="nuevo__producto-lbl">
+                Precio del producto - $ 
+                <input class="nuevo__producto-input" id="precioProducto" onkeypress="return validarIngresoSoloNumerico(event);" type="text" required   placeholder="100">
+            </label>
+            <span class="error-agregar-producto" id=".error-mensaje">Este campo no es valido</span>
+        </div>
+        <div class="input-container">
+            <label class="nuevo__producto-lbl"> 
+                Codigo del producto - #
+                <input class="nuevo__producto-input" id="codigoProducto" onkeypress="return validarIngresoSoloNumerico(event);" type="text" required   placeholder="11111111">
+            </label>
+            <span class="error-agregar-producto" id=".error-mensaje">Este campo no es valido</span>
+        </div>
+            <div class="input-container">
+            <label class="nuevo__producto-lbl">
+                Descripcion del producto
+                <textarea class="nuevo__producto-input" id="descripcionProducto" type="text"></textarea>
+            </label>
+            <span class="error-agregar-producto" id="error-mensaje">Este campo no es valido</span>
+        </div>
+            <div class="input-container">
+                <button class="editar__producto__button" >Editar producto</button>
+                <span class="mjeProductoGuardado">Mensaje enviado exitosamente!</span>
+    </section>
+    </main>
+    <footer>
+        <section class="contacto__container">
+            <div class="contacto__logo">
+                <a href = "../../index.html">
+                    <img class="contacto__logoFooter" src = "../img/logoEcommerce.svg" alt = "logo">
+                </a>
+            </div>
+            <div class="contacto__info">
+             <ul>
+                 <li><a href = "../../index.html">
+                  <img class="contacto__logoFooter" hidden src = "../img/logoEcommerce.svg" alt = "logo">
+                   </a> </li>
+                 <li class="contacto__info-li"><a class="contacto__info-text" href = "#">Quienes somos</a></li>
+                 <li class="contacto__info-li"><a class="contacto__info-text" href = "#">Política de privacidad</a></li>
+                 <li class="contacto__info-li"><a class="contacto__info-text" href = "#">Programa de fidelidad</a></li>
+                 <li class="contacto__info-li"><a class="contacto__info-text" href = "#">Nuestras Tiendas</a></li>
+                 <li class="contacto__info-li"><a class="contacto__info-text" href = "#">Quiero ser franquiciado</a></li>
+                 <li class="contacto__info-li"><a class="contacto__info-text" href = "#">Anúncie aquí</a></li>
+             </ul>
+         </div>
+         <form class="contacto__formulario"> 
+             <h2 class="contacto__formulario-title">Hable con nosotros</h2>
+             <div class="input-container">
+                  <input name="name" id="input" class="input_nombre_formulario" type="text" placeholder="Nombre" required maxlength="40" data-tipo="nombre">
+                  <label class="input-label" for="name">Nombre</label>
+                  <span class="input-message-error" id="error-nombre">Este campo no es valido</span>
+              </div>
+              <div class="textarea-container">
+                  <textarea class="textarea_mensaje" id="input" placeholder="Escriba su mensaje" required maxlength="120" data-tipo="mensaje"></textarea>
+                  <span class="input-message-error" id="error-mensaje">Este campo no es valido</span>
+              </div>
+             <a class="a_formulario-footer" href = "../../index.html" rel="">
+                 
+              <button class="contacto__button" >
+                  <span>Enviar mensaje</span>
+              </button>
+                  <span class="envioMje">Mensaje enviado exitosamente!</span>
+             </a>
+
+         </form>
+     </section>
+        <div class="info__footer">
+            <p class="info__footer-text">Desarrollado por Sebastian Lucas </p>
+            <p class="info__footer-text">2022</p>
+            <a href="https://github.com/sebiarg2022"><img src="../img/iconos/github.svg" alt="git"></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <script   src="../js/validar_formulario_agregarProductos.js"></script>
+    <script type="module" src="../controles/producto_editar.js"></script>
+    <script src="../js/validar_formulario_footer.js"></script>
+</body>
+</html>

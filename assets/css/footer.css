@@ -1,0 +1,254 @@
+input {
+  font-family: var(--fuente_principal);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+label {
+  font-family: var(--fuente_principal);
+  font-size: 12px;
+  line-height: 16px;
+}
+/*Logo*/
+
+/*Listado*/
+.contacto__info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  text-decoration: none;
+}
+
+.contacto__info ul li:hover {
+  box-shadow: 0px 5px 10px 5px rgba(22, 26, 45, 0.11);
+  transform: scale(1.02);
+}
+
+.contacto__info ul li a {
+  text-decoration: none;
+  color: var(--color_H2);
+  font-family: "Raleway";
+  font-weight: 500;
+  line-height: 19px;
+}
+/*Formulario*/
+.contacto__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 40px;
+  background-color: var(--color_fondo_registro);
+}
+
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.contacto__formulario-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  color: var(--contrast-dark-color);
+}
+
+.input-container {
+  font-weight: var(--font-weigth-input);
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.input_nombre_formulario {
+  box-sizing: border-box;
+  height: 3rem;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid var(--secondary-color);
+  padding: 1.375rem 0.3rem 0.5rem 1rem;
+  font-family: var(--fuente_principal);
+}
+
+.input_nombre_formulario::placeholder {
+  visibility: hidden;
+}
+
+.input_nombre_formulario:focus {
+  outline: none;
+}
+
+.input-label {
+  position: absolute;
+  top: 1.375rem;
+  left: 1rem;
+  transition: all 0.25s;
+  color: #a2a2a2;
+}
+
+.input_nombre_formulario:not(:placeholder-shown) + .input-label,
+.input_nombre_formulario:focus + .input-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+
+.input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input_nombre_formulario,
+.input-container--invalid .textarea_mensaje {
+  border: 1px solid var(--warning-color);
+  border-radius: 7px;
+}
+
+.input-container--invalid .textarea_mensaje::placeholder {
+  color: var(--warning-color);
+}
+
+.input-container--invalid .input-label {
+  color: var(--warning-color);
+}
+
+.input-message-error {
+  display: none;
+}
+
+.input-container--invalid .input-message-error {
+  color: var(--warning-color);
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.textarea_mensaje {
+  box-sizing: border-box;
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 100%;
+  height: 150px;
+}
+
+.textarea-container {
+  position: relative;
+  margin-bottom: 1rem;
+  font-weight: var(--font-weigth-input);
+}
+
+.textarea_mensaje:focus {
+  outline: none;
+}
+.textarea_mensaje::placeholder {
+  color: #a2a2a2;
+}
+
+.a_formulario-footer {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.envioMje {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 8px;
+  color: green;
+  font-weight: 700;
+}
+
+.envioMjeActivo {
+  display: block;
+}
+
+.contacto__button span {
+  position: relative;
+  z-index: 2;
+}
+
+.contacto__button {
+  padding: 16px;
+  background-color: var(--color_fondo_botones-2);
+  color: #ffffff;
+  border: solid 1px var(--color_fondo_botones-2);
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.contacto__button:hover {
+  padding: 16px;
+  color: var(--color_fondo_botones-2);
+  border-style: hidden;
+  box-shadow: 5px 5px 5px 5px rgba(98, 99, 105, 0.11);
+  transform: scale(1.04);
+}
+
+.contacto__button::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: calc(-100% - 20px);
+  border-bottom: 90px solid #ffffff;
+  transition: 0.3s ease-in-out;
+}
+
+.contacto__button:hover::after {
+  left: 0px;
+}
+
+.info__footer {
+  text-align: center;
+  padding: 15px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  color: var(--color_H2);
+}
+
+@media screen and (max-width: 420px) {
+  .contacto__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto__info ul {
+    gap: 14px;
+    align-items: center;
+  }
+
+  .contacto__formulario {
+    width: 90%;
+    padding-top: 25px;
+  }
+
+  .contacto__button {
+    padding: 10px;
+  }
+
+  .contacto__button:hover {
+    padding: 10px;
+  }
+
+  .info__footer {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacto__logo {
+    display: none;
+  }
+
+  .contacto__logoFooter {
+    display: block;
+  }
+}
