@@ -16,7 +16,7 @@ const eliminarProducto = (id) => {
 //obtener el detalle del producto por medio del id
 //respuesta la retornamos en .json
 const detalleProducto = (id) => {
-   return fetch("https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}").then((respuesta)=>
+   return fetch(`https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}`).then((respuesta)=>
   //return fetch(`http://localhost:3001/articulos/${id}`).then((respuesta) =>
     respuesta.json()
   );
