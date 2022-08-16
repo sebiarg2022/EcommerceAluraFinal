@@ -76,7 +76,7 @@ const buscarProducto = (texto) => {
     data.forEach(({ url, categoria, nombre, precio, id }) => {
       if (nombre.toLowerCase().indexOf(texto) !== -1) {
         const nuevaLinea =
-          crearNuevaLinea(url, categoria, nombre, precio, id) /
+          crearNuevaLinea(url, categoria, nombre, precio, id) 
           table.appendChild(nuevaLinea);
         cont++;
       }
