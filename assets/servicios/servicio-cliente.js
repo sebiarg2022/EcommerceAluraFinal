@@ -2,7 +2,7 @@
 const listaProductos= () => 
 //fetch("http://localhost:3000/articulos").then((respuesta) => respuesta.json());
 //fetch("http://localhost:3001/articulos").then((respuesta) => respuesta.json());
-fetch("https://sl-ecommerce-alura-final.herokuapp.com//articulos").then((respuesta) => respuesta.json());
+fetch("https://sl-ecommerce-alura-final.herokuapp.com/articulos").then((respuesta) => respuesta.json());
 
 //fun para eliminar cliente
 //le pasamos el id a eliminar y en la url del fetch tmb el id
