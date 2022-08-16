@@ -7,7 +7,7 @@ fetch("https://sl-ecommerce-alura-final.herokuapp.com/articulos").then((respuest
 //fun para eliminar cliente
 //le pasamos el id a eliminar y en la url del fetch tmb el id
 const eliminarProducto = (id) => {
-  return fetch(`https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}`,{
+  return fetch("https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}",{
  // return fetch(`http://localhost:3001/articulos/${id}`, {
     method: "DELETE",
   });
@@ -16,7 +16,7 @@ const eliminarProducto = (id) => {
 //obtener el detalle del producto por medio del id
 //respuesta la retornamos en .json
 const detalleProducto = (id) => {
-   return fetch(`https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}`).then((respuesta)=>
+   return fetch("https://sl-ecommerce-alura-final.herokuapp.com/articulos/${id}").then((respuesta)=>
   //return fetch(`http://localhost:3001/articulos/${id}`).then((respuesta) =>
     respuesta.json()
   );
@@ -32,7 +32,7 @@ const actualizarProducto = (
   descripcion,
   id
 ) => {
-  return fetch(`https://sl-ecommerce-alura-final.herokuapp.com/${id}`,{
+  return fetch("https://sl-ecommerce-alura-final.herokuapp.com/${id}",{
   //return fetch(`http://localhost:3001/articulos/${id}`, {
     method: "PUT",
     headers: {
