@@ -32,7 +32,7 @@ const actualizarProducto = (
   descripcion,
   id
 ) => {
-  return fetch("https://my-json-server.typicode.com/sebiarg2022/EcommerceAluraFinal/${id}",{
+  return fetch("https://sl-ecommerce-alura-final.herokuapp.com/${id}",{
   //return fetch(`http://localhost:3001/articulos/${id}`, {
     method: "PUT",
     headers: {
@@ -57,7 +57,7 @@ const crearProducto = (url, categoria, nombre, precio, codigo, descripcion) => {
   //decimos el metodo a utilizar, sino lo aclaramos usa GET
   //queremos crear usamos POST
   //recibe 2 parametros url donde debe ir + objeto POST
-  return fetch("https://my-json-server.typicode.com/sebiarg2022/EcommerceAluraFinal/articulos",{
+  return fetch("https://sl-ecommerce-alura-final.herokuapp.com/articulos",{
  // return fetch("http://localhost:3001/articulos", {
     method: "POST", //para crear nuevo elemento
     headers: {
